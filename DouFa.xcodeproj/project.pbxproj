@@ -7,11 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2700209C22657D1F0006489C /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2700209B22657D1F0006489C /* User.swift */; };
+		270020A02265E2A30006489C /* AuthHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2700209F2265E2A30006489C /* AuthHelper.swift */; };
 		272C722522642E7600F17C2C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 272C722422642E7600F17C2C /* AppDelegate.swift */; };
 		272C722722642E7600F17C2C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 272C722622642E7600F17C2C /* ViewController.swift */; };
 		272C722922642E7600F17C2C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 272C722822642E7600F17C2C /* Assets.xcassets */; };
 		272C722C22642E7600F17C2C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 272C722A22642E7600F17C2C /* Main.storyboard */; };
 		272C723822642E7700F17C2C /* DouFaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 272C723722642E7700F17C2C /* DouFaTests.swift */; };
+		275B4DF62267000F00A61D79 /* Exception.swift in Sources */ = {isa = PBXBuildFile; fileRef = 275B4DF52267000F00A61D79 /* Exception.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -25,6 +28,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		100DD037004F93C2516CDEAD /* Pods-DouFa.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DouFa.release.xcconfig"; path = "Target Support Files/Pods-DouFa/Pods-DouFa.release.xcconfig"; sourceTree = "<group>"; };
+		2700209B22657D1F0006489C /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		2700209F2265E2A30006489C /* AuthHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthHelper.swift; sourceTree = "<group>"; };
 		272C722122642E7600F17C2C /* DouFa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DouFa.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		272C722422642E7600F17C2C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		272C722622642E7600F17C2C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -35,6 +41,10 @@
 		272C723322642E7700F17C2C /* DouFaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DouFaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		272C723722642E7700F17C2C /* DouFaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DouFaTests.swift; sourceTree = "<group>"; };
 		272C723922642E7700F17C2C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		275B4DF52267000F00A61D79 /* Exception.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exception.swift; sourceTree = "<group>"; };
+		687861320B3C1A22C8C32ADF /* Pods-DouFa.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DouFa.debug.xcconfig"; path = "Target Support Files/Pods-DouFa/Pods-DouFa.debug.xcconfig"; sourceTree = "<group>"; };
+		8E1247415795CC853E8771C4 /* Pods-DouFaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DouFaTests.release.xcconfig"; path = "Target Support Files/Pods-DouFaTests/Pods-DouFaTests.release.xcconfig"; sourceTree = "<group>"; };
+		DFBF65AC3D79B144F40CB66A /* Pods-DouFaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DouFaTests.debug.xcconfig"; path = "Target Support Files/Pods-DouFaTests/Pods-DouFaTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,12 +65,29 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2700209D2265E26D0006489C /* core */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = core;
+			sourceTree = "<group>";
+		};
+		2700209E2265E2770006489C /* auth */ = {
+			isa = PBXGroup;
+			children = (
+				2700209F2265E2A30006489C /* AuthHelper.swift */,
+			);
+			path = auth;
+			sourceTree = "<group>";
+		};
 		272C721822642E7600F17C2C = {
 			isa = PBXGroup;
 			children = (
 				272C722322642E7600F17C2C /* DouFa */,
 				272C723622642E7700F17C2C /* DouFaTests */,
 				272C722222642E7600F17C2C /* Products */,
+				D54E6A97D506EE7D8455B70E /* Pods */,
+				7C3AF41E45B59C2A2CAE76F5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -76,6 +103,9 @@
 		272C722322642E7600F17C2C /* DouFa */ = {
 			isa = PBXGroup;
 			children = (
+				2700209E2265E2770006489C /* auth */,
+				2700209D2265E26D0006489C /* core */,
+				272C72422264317300F17C2C /* module */,
 				272C722422642E7600F17C2C /* AppDelegate.swift */,
 				272C722622642E7600F17C2C /* ViewController.swift */,
 				272C722822642E7600F17C2C /* Assets.xcassets */,
@@ -95,6 +125,33 @@
 			path = DouFaTests;
 			sourceTree = "<group>";
 		};
+		272C72422264317300F17C2C /* module */ = {
+			isa = PBXGroup;
+			children = (
+				2700209B22657D1F0006489C /* User.swift */,
+				275B4DF52267000F00A61D79 /* Exception.swift */,
+			);
+			path = module;
+			sourceTree = "<group>";
+		};
+		7C3AF41E45B59C2A2CAE76F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D54E6A97D506EE7D8455B70E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				687861320B3C1A22C8C32ADF /* Pods-DouFa.debug.xcconfig */,
+				100DD037004F93C2516CDEAD /* Pods-DouFa.release.xcconfig */,
+				DFBF65AC3D79B144F40CB66A /* Pods-DouFaTests.debug.xcconfig */,
+				8E1247415795CC853E8771C4 /* Pods-DouFaTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -102,9 +159,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 272C723C22642E7700F17C2C /* Build configuration list for PBXNativeTarget "DouFa" */;
 			buildPhases = (
+				DED5576FDDA0AAF7F537708F /* [CP] Check Pods Manifest.lock */,
 				272C721D22642E7600F17C2C /* Sources */,
 				272C721E22642E7600F17C2C /* Frameworks */,
 				272C721F22642E7600F17C2C /* Resources */,
+				61FC84FF99D86005BBEBDB23 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -119,6 +178,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 272C723F22642E7700F17C2C /* Build configuration list for PBXNativeTarget "DouFaTests" */;
 			buildPhases = (
+				83DD644352760F09AADC3526 /* [CP] Check Pods Manifest.lock */,
 				272C722F22642E7700F17C2C /* Sources */,
 				272C723022642E7700F17C2C /* Frameworks */,
 				272C723122642E7700F17C2C /* Resources */,
@@ -145,6 +205,11 @@
 				TargetAttributes = {
 					272C722022642E7600F17C2C = {
 						CreatedOnToolsVersion = 10.2;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 1;
+							};
+						};
 					};
 					272C723222642E7700F17C2C = {
 						CreatedOnToolsVersion = 10.2;
@@ -190,11 +255,87 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		61FC84FF99D86005BBEBDB23 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DouFa/Pods-DouFa-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DouFa/Pods-DouFa-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		83DD644352760F09AADC3526 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DouFaTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DED5576FDDA0AAF7F537708F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DouFa-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		272C721D22642E7600F17C2C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2700209C22657D1F0006489C /* User.swift in Sources */,
+				275B4DF62267000F00A61D79 /* Exception.swift in Sources */,
+				270020A02265E2A30006489C /* AuthHelper.swift in Sources */,
 				272C722722642E7600F17C2C /* ViewController.swift in Sources */,
 				272C722522642E7600F17C2C /* AppDelegate.swift in Sources */,
 			);
@@ -347,6 +488,7 @@
 		};
 		272C723D22642E7700F17C2C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 687861320B3C1A22C8C32ADF /* Pods-DouFa.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = DouFa/DouFa.entitlements;
@@ -358,6 +500,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				PRODUCT_BUNDLE_IDENTIFIER = com.kylece.DouFa;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -366,6 +509,7 @@
 		};
 		272C723E22642E7700F17C2C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 100DD037004F93C2516CDEAD /* Pods-DouFa.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = DouFa/DouFa.entitlements;
@@ -377,6 +521,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				PRODUCT_BUNDLE_IDENTIFIER = com.kylece.DouFa;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -385,6 +530,7 @@
 		};
 		272C724022642E7700F17C2C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DFBF65AC3D79B144F40CB66A /* Pods-DouFaTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -406,6 +552,7 @@
 		};
 		272C724122642E7700F17C2C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8E1247415795CC853E8771C4 /* Pods-DouFaTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
